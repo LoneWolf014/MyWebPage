@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+header{
+    background-color: palevioletred;
+
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.h_item{
+    background-color: cornflowerblue;
+    /* width: 500px; */
+
+    margin: 5px;
+
+    font-size: 48px;
+}
+
+#title{
+    font-family: "charm";
+    font-weight: 700;
+    font-size: 100px;
+}
+
+#nav_bar{
+    padding: 10px 20px;
+}
+
+#nav_bar>ul{
+    height: 100%;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_items{
+    margin: 5px;
+    background-color: blue;
+    box-sizing: border-box;
+    
+    /*Flex - container is nav_bar>ul */
+    align-content: center;
+}
+
+.nav_items>a{
+    text-decoration: none;
+    color: bisque;
+}
+
+.nav_items:hover{
+    color: red;
+
+    border-top: 4px solid red;
+    a{
+        color: red;
+    }
+}
