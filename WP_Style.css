@@ -6,19 +6,23 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #1D2D50;
+}
+
 header{
-    background-color: palevioletred;
+    background-color: #133B5C;
 
     padding: 10px 20px;
 
     display: flex;
     justify-content: space-between;
     align-content: center;
+
+    box-shadow: 0px 20px 18px 10px #1E5F74;
 }
 
 .h_item{
-    background-color: cornflowerblue;
-    /* width: 500px; */
 
     margin: 5px;
 
@@ -26,6 +30,7 @@ header{
 }
 
 #title{
+    color: #FCDAB7;
     font-family: "charm";
     font-weight: 700;
     font-size: 100px;
@@ -44,9 +49,7 @@ header{
 }
 
 .nav_items{
-    margin: 5px;
-    background-color: blue;
-    box-sizing: border-box;
+    margin: 20px;
     
     /*Flex - container is nav_bar>ul */
     align-content: center;
@@ -54,14 +57,14 @@ header{
 
 .nav_items>a{
     text-decoration: none;
-    color: bisque;
+    color:  #00A8CC; /* #00A8CC; #1E5F74*/
 }
 
 .nav_items:hover{
-    color: red;
+    color: #FCDAB7;
 
-    border-top: 4px solid red;
+    border-top: 4px solid #FCDAB7;
     a{
-        color: red;
+        color: #FCDAB7;
     }
 }
