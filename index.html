@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neelesh</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- VT323 -->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <!-- DotGothic16 -->
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+    <!-- Share Tech Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <!-- Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="myStyle.css">
+    <link rel="stylesheet" href="ModernStyle.css">
+</head>
+<body>
+<!-- .......................................................................................... -->
+    <section class="screen" id="Menu">
+
+        <div class="ascii-line"></div>
+            <h1 id="Main-Title">
+                Welcome
+                to The
+                World
+                of 
+                Neelesh
+            </h1>
+        <div class="ascii-line"></div>
+
+        <h3>-- Choose Your Aesthetic -- </h3>
+
+        <div class="btn-container">
+            <button data-mode="Retro"><span>Retro</span></button>
+            <button data-mode="Modern"><span>Modern</span></button>
+        </div>
+    </section>
+
+    <section class="screen Hidden" id="Retro">
+        <h3>This is Retro</h3> <br />
+        <button data-mode="Menu">Main-Menu</button>
+    </section>
+    
+    <section class="screen Hidden" id="Modern">
+        
+        <section class="Hero_Section" id="Home">
+            <div class="Hero_BG">
+                <video autoplay muted loop class="bg-video">
+                    <source src="assets/videos/HeroBG.webm">
+                    <source src="assets/videos/HeroBG.mp4">
+                </video>
+            </div>
+
+            <div class="Hero_Overlay">
+                <div class="Hero_Glass">
+                    <h1 class="Hero_Title">Neelesh Damarla</h1>
+                    <p class="Hero_Subtitle">Crafting Systems, Stories and Interactions</p>
+                </div>
+                <div class="scroll_cue" id="scroll_down">▼</div>
+            </div>
+
+        </section>
+
+        <nav class="navbar" id="navbar">
+            <div class="nav_Title">
+                <a href="#Home" 
+                    style="fill: currentColor;
+                            font-size: 3rem;
+                            align-content: center;
+                            text-decoration: none;
+                            :hover{text-decoration: none; color: currentColor;}">
+                    Neelesh Damarla
+                </a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav_Container">
+                <li class="nav_Item"> <a href="#Home"> Home </a> </li>
+                <li class="nav_Item"> <a href="#About_Me"> About Me </a> </li>
+                <li class="nav_Item dropdown">
+                    <span class="dropbtn"> Projects  </span>
+                    <div class="dropdown-content">
+                        <a href="#College_Works"> College Works </a>
+                        <a href="#AI_Collabs"> Me and AI </a>
+                        <a href="#Personal_Ventures"> My Personal Collection </a>
+                    </div>
+                </li>
+                <li class="nav_Item"> <a href="#Contact"> Contact </a> </li>
+            </ul>
+        </nav>
+
+        <section class="Section_Container" id="About_Me">
+            <div class="SectionHeading">
+                <h1>ABOUT ME</h1>
+            </div>
+            <div class="Section_Card" 
+                data-direction="right"
+                data-img="url(assets/images/About_Me.png)"
+                data-filter="hue-rotate(90deg)"
+                data-hue="hue-rotate(220deg)">
+                <div class="Card_Overlay"></div>
+                <div class="Card_Content">
+                    <div class="img-Content"></div>
+                    <div class="txt-Content">
+                        <p class="intro">Hello and welcome.</p>
+
+                        <p>
+                            I'm <span class="highlight">Neelesh</span> — a Computer Science graduate with a focus on Gaming Technology.
+                            Right now, I’m learning full-stack development with Java while designing my first
+                            fully narrative-driven game, <span class="highlight">OFFLINE</span> — an interactive mystery adventure inspired by <ins>ZORK</ins>.
+                        </p>
+
+                        <p>
+                            I like building systems that feel alive — from quick Python tools to 3D prototypes in Unreal Engine.
+                            Most of what I know came from experimenting, failing, debugging at weird hours, and somehow making it work.
+                        </p>
+
+                        <p>
+                            I’m curious about how games actually *feel* to play — which pulled me into:
+                        </p>
+
+                        <ul class="skills">
+                            <li>† <span class="highlight">Gameplay Scripting</span></li>
+                            <li>† <span class="highlight">Game Systems Design</span></li>
+                            <li>† <span class="highlight">3Cs — Character, Controls, Camera</span></li>
+                            <li>† <span class="highlight">Interactive Storytelling</span> & emotional pacing</li>
+                        </ul>
+
+                        <hr />
+
+                        <p class="subsection">General Trivia — <em>just in case you're still reading...</em></p>
+
+                        <p>
+                            I love jamming weird stories and geeking out over old game mechanics with people who get excited about design like I do.
+                        </p>
+
+                        <ul class="interests">
+                            <li>† <span>Video Games |</span> Life is Strange, The Walking Dead, Duskwood</li>
+                            <li>† <span>Animated Shows |</span> Ben 10, Arcane</li>
+                            <li>† <span>Novels |</span> Harry Potter, <em>The Making of Riley Paige</em> by Blake Pierce</li>
+                        </ul>
+
+                        <p class="footer-link">
+                            🔗 <a href="https://github.com/LoneWolf014" target="_blank">github.com/LoneWolf014</a>
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="Project_Category" id="College_Works">
+
+            <hr class="hr-elegant" data-content="College_Projects">
+
+            <section class="Section_Container" id="LostInCastle">
+                <div class="SectionHeading">
+                    <h1>Lost in Castle</h1>
+                </div>
+                <div class="Section_Card" 
+                    data-direction="left"
+                    data-img="url(assets/images/COS.png)"
+                    data-filter="sepia(70%) contrast(90%) saturate(50%)"
+                    data-hue="hue-rotate(10deg)">
+                    <div class="Card_Overlay"></div>
+                    <div class="Card_Content">
+                        <div class="img-Content">
+                        </div>
+                        <div class="txt-Content">
+                            <p class="intro">A cinematic prototype built in Unreal.</p>
+
+                            <p>
+                                <span class="highlight">Lost in Castle</span> was my final semester project (Jan – May 2025) —
+                                a third-person action-adventure prototype built with Unreal Engine 5.
+                                I wanted to explore how <span class="highlight">camera work</span> can shape how players feel,
+                                not just what they see.
+                            </p>
+
+                            <p>
+                                Inspired by <em>Silent Hill</em> and <em>Resident Evil</em>, I built a system that blends
+                                <span class="highlight">fixed angles</span> with <span class="highlight">spline-following cinematic cameras</span>.
+                                Movement used classic <span class="highlight">tank controls</span>, which — surprisingly —
+                                worked well with the dramatic camera shifts and added to the tension.
+                            </p>
+
+                            <p>
+                                The prototype includes basic <span class="highlight">combat, enemy AI (via behavior trees), and interaction systems</span>,
+                                all done through Blueprints. Even without full levels or smart enemies, it feels like a game that *could* exist.
+                            </p>
+
+                            <p>
+                                Most of my focus was on getting the camera transitions to feel smooth — blending from static shots
+                                to dynamic tracking paths using <span class="highlight">trigger volumes and splines</span>.
+                                The system actually worked better than I expected — but only when everything was planned down to the decimal.
+                            </p>
+
+                            <p>
+                                I learned why this style fell out of favor: it demands absurd precision.
+                                Misplacing a trigger by a few units could break the camera logic or cause blind spots.
+                                You have to decide exactly what you want players to see, when, and how it should feel.
+                                That gave me a whole new respect for how effortlessly games like <em>Silent Hill (1999)</em> pulled it off.
+                            </p>
+
+                            <p>
+                                It’s a lost art, honestly. I’d love to revisit this someday — and actually build a full game that leans into this
+                                kind of cinematic control.
+                            </p>
+
+                            <ul class="skills">
+                                <li>† <span class="highlight">Unreal Blueprints</span></li>
+                                <li>† <span class="highlight">Cinematic camera scripting</span></li>
+                                <li>† <span class="highlight">Tank controls & fixed-angle design</span></li>
+                                <li>† <span class="highlight">Modular environments + VFX (Niagara)</span></li>
+                            </ul>
+
+                            <p class="footer-link">
+                                🔗 <a href="https://youtu.be/Ef9kW-POO7w" target="_blank">View Demo On Youtube</a>
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="Section_Container" id="MetaCam">
+                <div class="SectionHeading">
+                    <h1>MetaCam</h1>
+                </div>
+                <div class="Section_Card" 
+                    data-direction="right"
+                    data-img="url(assets/images/MC_OL.png)"
+                    data-filter="grayscale(75%)"
+                    data-hue="hue-rotate(0deg)"
+                    data-hov_width="0%">
+                    <div class="Card_Overlay"></div>
+                    <div class="Card_Content">
+                        <div class="img-Content" 
+                            style="background-image: url(assets/images/MC.png); 
+                            background-size: 100% 100%;"></div>
+                        <div class="txt-Content">
+                            <p class="intro">Motion Capture Tool built with Python, MediaPipe, and OpenCV</p>
+
+                            <p>
+                                <span class="highlight">Motion Capture Tool</span> was my minor project for Semester 7 (Aug – Nov 2024),
+                                where I tried building a DIY motion-capture pipeline using Python and open-source tools —
+                                no fancy suits or studio setups.
+                            </p>
+
+                            <p>
+                                It works by detecting <span class="highlight">pose, face, and hand landmarks</span> in real-time
+                                using <span class="highlight">MediaPipe</span>, then exporting that motion data as a
+                                timestamped <span class="highlight">JSON file</span> that’s game-engine ready.
+                                The goal was to generate simple animations using just a webcam or phone camera.
+                            </p>
+
+                            <p>
+                                I built a custom interface with Python and Pygame where users can switch between camera inputs,
+                                record motion clips, and watch live pose tracking as they move.
+                                While I didn’t get to test it directly inside Unreal Engine, the export logic is there —
+                                the JSON is clean, structured, and ready to rig.
+                            </p>
+                            
+                            <p>
+                                Most of the heavy lifting — like pose estimation and JSON structuring — was done by adapting
+                                open-source code with a *lot* of AI help (a little thing called vibe coding).
+                            </p>
+
+                            <p>
+                                The whole idea was to make animation more accessible — especially for solo devs or indies
+                                without expensive mocap gear. Honestly, I had zero idea how this worked before,
+                                but with a bit of trial, error, and AI assistance, I managed to ship a working prototype.
+                            </p>
+
+                            <p>
+                                It’s rough around the edges, sure — but it taught me a lot about <span class="highlight">data flow, pose estimation, and real-time input handling</span>.
+                                I’d love to revisit this someday and take it one step further into actual skeletal animation.
+                            </p>
+
+                            <ul class="skills">
+                                <li>† <span class="highlight">Python + Pygame UI</span></li>
+                                <li>† <span class="highlight">MediaPipe pose detection</span></li>
+                                <li>† <span class="highlight">OpenCV input & video streaming</span></li>
+                                <li>† <span class="highlight">Landmark-to-JSON export logic</span></li>
+                            </ul>
+
+                            <p class="footer-link">
+                                🔗 <a href="https://github.com/LoneWolf014/MinorProject" target="_blank">View on GitHub</a>
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="Section_Container" id="Play90s">
+                <div class="SectionHeading">
+                    <h1>Play #90s</h1>
+                </div>
+                <div class="Section_Card" 
+                    data-direction="left"
+                    data-img="url(assets/images/P90s3.png)"
+                    data-filter="grayscale(75%)"
+                    data-hue="hue-rotate(0deg)">
+                    <div class="Card_Overlay"></div>
+                    <div class="Card_Content">
+                        <div class="img-Content"></div>
+                        <div class="txt-Content">
+                            <p class="intro">Mini arcade reboots — made just for fun.</p>
+
+                            <p>
+                                <span class="highlight">PLAY 90s</span> was my first hands-on game project — a tiny collection
+                                of retro-inspired games built while exploring game dev basics through Harvard’s CS50x course.
+                                It’s offline, fast to boot, and designed to feel like the kind of games you’d play on a school computer in the 2000s.
+                            </p>
+
+                            <p>
+                                I made two games with multiple variations:
+                                <span class="highlight">Pong</span> with both 1P (vs CPU) and 2P modes,
+                                available in classic black-and-white and a color-upgrade version.
+                                Then a <span class="highlight">Flappy Bird</span> clone — first the standard version,
+                                and then a reboot called <span class="highlight">Fly-UFO</span> with a neon city, alien sprite, and a parallax-scrolling sky.
+                            </p>
+
+                            <p>
+                                I mostly just wanted to understand how simple games *work* — drawing loops, input handling, collision, score tracking.
+                                It’s not advanced or polished, but finishing this gave me the confidence to keep building games beyond tutorials.
+                            </p>
+
+                            <ul class="skills">
+                                <li>† <span class="highlight">Pong — 1P/2P (Classic + Color)</span></li>
+                                <li>† <span class="highlight">Flappy Bird — Classic + Fly-UFO</span></li>
+                                <li>† <span class="highlight">Simple UI / score / game loop</span></li>
+                                <li>† <span class="highlight">Playable offline</span></li>
+                            </ul>
+
+                            <p class="footer-link">
+                                🔗 <a href="https://github.com/LoneWolf014/Play-90-s" target="_blank">View on GitHub</a>
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="Project_Category" id="AI_Collabs">
+
+            <hr class="hr-cyber" data-content="AI Collaborations">
+
+            <section class="Section_Container" id="CRT_TEXT">
+                <div class="SectionHeading">
+                    <h1>CRT RETRO Adventure</h1>
+                </div>
+                <div class="Section_Card" 
+                    data-direction="right"
+                    data-img="url(assets/images/CRT_TXT.png)"
+                    data-filter="grayscale(75%)"
+                    data-hue="hue-rotate(220deg)"
+                    data-hov_width="0%">
+
+                    <div class="Card_Overlay" style="background-size: 100% 100%;"></div>
+                    <div class="Card_Content">
+                        <div class="img-Content" style="background-size: 100% 100%;"></div>
+                        <div class="txt-Content">
+                            <p class="intro">Terminal-style text game prototype built with Python, Pygame, and vibes</p>
+
+                            <p>
+                                I built this retro-inspired <span class="highlight">text adventure engine</span> after getting curious about how games like <span class="highlight">Zork</span> worked before graphics existed.
+                                It’s not a full game — more of a design experiment to test out <span class="highlight">typed commands</span> like <code>move left</code>, <code>take key</code>, <code>use terminal</code>,
+                                and how to manage those in a minimal UI.
+                            </p>
+
+                            <p>
+                                The prototype includes:
+                                - a glowing CRT-style <span class="highlight">text renderer</span>
+                                - a responsive <span class="highlight">command parser</span> and scrollable message log
+                                - <span class="highlight">3D skull renderer</span> that rotates in real-time
+                                - custom <span class="highlight">procedural sound effects</span> (startup, typing, errors, etc.)
+                                — all handled via <span class="highlight">Pygame</span> with no external assets.
+                            </p>
+
+                            <p>
+                                Honestly, I didn’t know where this was going — I just started vibe coding after a late-night chat about interactive fiction 
+                                with <span class="highlight">ChatGPT</span> and <span class="highlight">Claude</span>. 
+                                Every system was vibe-coded into modules: text manager, game state, 3D renderer, sound manager. 
+                                No engine. No framework. Just one window, one keyboard, and a glowing cursor.
+                            </p>
+
+                            <p>
+                                It’s weirdly satisfying watching a fake terminal blink while you type “look around.” 
+                                I might evolve this into a full parser game someday... or just keep it as a time capsule from when I discovered how old games thought.
+                            </p>
+
+                            <ul class="skills">
+                                <li>† <span class="highlight">Command parsing system</span></li>
+                                <li>† <span class="highlight">Custom CRT-style text renderer</span></li>
+                                <li>† <span class="highlight">Procedural sound effects (pure Python)</span></li>
+                                <li>† <span class="highlight">Real-time 3D skull rendered with math</span></li>
+                                <li>† <span class="highlight">Typed input + scrollback + color cycling</span></li>
+                            </ul>
+
+                            <p class="footer-link">
+                                🔗 <a href="https://github.com/LoneWolf014/CRT_Text_Adventure" target="_blank">View on GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="Section_Container" id="CRT_SNAKE">
+                <div class="SectionHeading">
+                    <h1>CRT_Snake — A Retro Shader Playground Disguised as Snake</h1>
+                </div>
+                <div class="Section_Card" 
+                    data-direction="left"
+                    data-img="url(assets/images/Snake1.png)"
+                    data-filter="grayscale(75%)"
+                    data-hue="hue-rotate(220deg)">
+                    <div class="Card_Overlay" style="background-size: 100% 100%;"></div>
+                    <div class="Card_Content">
+                        <div class="img-Content"></div>
+                        <div class="txt-Content">
+                            <p class="intro">
+                                CRT_Snake — Retro Glow, 3D Shapes, and Pure Vibe Coding
+                            </p>
+
+                            <p>
+                                I ended up building not one, but <span class="highlight">two versions</span> of this — one for shader experiments, another to explore themes and transparency. 
+                                Both born from a single goal: mess with retro visuals until they looked like a CRT fever dream.
+                            </p>
+
+                            <p>
+                                This first version is built entirely in <span class="highlight">Pygame</span>, recreating Snake inside a retro CRT aesthetic with glowing scanlines and <span class="highlight">manually rendered 3D shapes</span> rotating in every corner. 
+                                I handled everything from <span class="highlight">vector math</span> to <span class="highlight">phosphor beam effects</span> — no engines, no shaders, just pixels.
+                            </p>
+
+                            <p>
+                                Not gonna lie — most of the heavy lifting was done by <span class="highlight">ChatGPT</span> and <span class="highlight">Claude</span>. 
+                                I just supplied the idea, the visuals I wanted, and some late-night energy. They wrote most of the code. I rewired, stitched, and polished it into this haunted arcade demo.
+                            </p>
+
+                            <p>
+                                The highlight? The glowing scanline isn’t just for show — it reacts in real-time when it sweeps over the snake or food. Feels like you're playing inside a dying monitor with attitude.
+                            </p>
+
+                            <ul class="skills">
+                                <li>† <span class="highlight">Classic Snake core mechanics</span></li>
+                                <li>† <span class="highlight">Manually rendered 3D cubes, pyramids, tetrahedrons</span></li>
+                                <li>† <span class="highlight">CRT scanline + phosphor glow engine</span></li>
+                                <li>† <span class="highlight">No shaders — all effects in raw Pygame</span></li>
+                                <li>† <span class="highlight">Beam glow reacts to live gameplay</span></li>
+                            </ul>
+
+                            <p class="footer-link">
+                                🔗 <a href="https://github.com/LoneWolf014/CRT_Snake_PyGame_V_1" target="_blank">View on GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Section_Card" 
+                    data-direction="right"
+                    data-img="url(assets/images/Snake2.png)"
+                    data-filter="grayscale(75%)"
+                    data-hue="hue-rotate(220deg)">
+                    <div class="Card_Overlay" style="background-size: 100% 100%;"></div>
+                    <div class="Card_Content">
+                        <div class="img-Content"></div>
+                        <div class="txt-Content">
+                            <p class="intro">
+                                CRT_Snake v2 — Thematic Snake with Retro CRT Skins
+                            </p>
+                            <p class="intro">
+                                Did I build Snake? Not really. Did I vibe-code the heck out of it with AI? Absolutely.
+                            </p>
+
+                            <p>
+                                This version of <span class="highlight">CRT Snake</span> was coded in both <span class="highlight">Python</span> and <span class="highlight">Java</span>, but the <strong>Java build won</strong> — smoother alpha rendering, pixel-perfect CRT effects, and that sweet, crisp look only Java2D gives when you treat it like a shader lab.
+                            </p>
+
+                            <p>
+                                Every <span class="highlight">5 points</span>, the game cycles to a new retro theme: 
+                                from glowing green terminals to warm amber monitors to chunky blue pixel styles with banding and noise. 
+                                The CRT isn't just for looks — the screen has <span class="highlight">scanlines, ghost trails, phosphor glow, chunky pixel overlays, banding artifacts</span>, and a moving beamline that reacts to gameplay in real-time.
+                            </p>
+
+                            <p>
+                                Built completely in <span class="highlight">pure Java Swing</span> (and optionally <span class="highlight">Pygame</span> for the Python version), 
+                                this project started as a shader test and spiraled into a dual-engine CRT love letter. 
+                                I wrote zero real logic — everything was co-written by <span class="highlight">ChatGPT</span> and <span class="highlight">Claude</span>. 
+                                I just vibed the idea into existence.
+                            </p>
+
+                            <ul class="skills">
+                                <li>† <span class="highlight">Dynamic CRT theme switching every 5 points</span></li>
+                                <li>† <span class="highlight">Scanlines, phosphor glow, pixel noise, banding</span></li>
+                                <li>† <span class="highlight">Clean alpha blending & ghosting in Java2D</span></li>
+                                <li>† <span class="highlight">Rewritten from Python to Java for visual clarity</span></li>
+                                <li>† <span class="highlight">Built with AI pair-programming + pure vibes</span></li>
+                            </ul>
+
+                            <p class="footer-link">
+                                🔗 <a href="https://github.com/LoneWolf014/CRT_Snake_PyGame_V_2" target="_blank">View Pygame Version on GitHub</a>
+                            </p>
+                            <p class="footer-link">
+                                🔗 <a href="https://github.com/LoneWolf014/CRT_Snake_V_2_Java" target="_blank">View Java Version on GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="Section_Container" id="CRT_Hangman">
+                <div class="SectionHeading">
+                    <h1>CRT_Hangman — Terminal Nostalgia Meets Classic Wordplay</h1>
+                </div>
+                <div class="Section_Card" 
+                    data-direction="left"
+                    data-img="url(assets/images/TH_OL.png)"
+                    data-filter="grayscale(75%)"
+                    data-hue="hue-rotate(220deg)"
+                    data-hov_width="0%">
+                    <div class="Card_Overlay"></div>
+                    <div class="Card_Content">
+                        <div class="img-Content" style="background: url(assets/images/TH.png); background-size: 100% 100%;
+                        background-repeat: no-repeat; background-position: center;"></div>
+                        <div class="txt-Content">
+                            <p class="intro">
+                                Old-school Hangman reimagined as a CRT terminal game — green glow, ASCII borders, and that 80s hacker vibe.
+                            </p>
+
+                            <p>
+                                <span class="highlight">CRT_Hangman</span> is a terminal-based rework of the classic 
+                                word-guessing game, styled like it’s running on an old green-screen monitor. 
+                                It uses a <span class="highlight">bordered ASCII UI</span>, glowing text 
+                                via <code>colorama</code>, and a subtle <span class="highlight">scanline-style refresh effect</span> 
+                                to sell the vintage vibe.
+                            </p>
+
+                            <p>
+                                This was more of a retro design experiment than a game challenge — 
+                                a simple Python build with some UI polish. 
+                                The <span class="highlight">hangman figure</span> is rendered stage-by-stage 
+                                in text art, and the whole thing is wrapped in a CRT-styled frame that redraws 
+                                like an old screen refreshing line by line.
+                            </p>
+
+                            <p>
+                                I worked on this with <span class="highlight">ChatGPT</span> and <span class="highlight">Claude</span>, 
+                                mostly tossing in the ideas and letting them handle the code. 
+                                Quick build, fun aesthetic, satisfying little side project.
+                            </p>
+
+                            <ul class="skills">
+                                <li>† <span class="highlight">Terminal-based CRT aesthetic</span></li>
+                                <li>† <span class="highlight">ASCII-rendered hangman stages</span></li>
+                                <li>† <span class="highlight">Green-on-black scanline refresh effect</span></li>
+                                <li>† <span class="highlight">Built with Python and Colorama only</span></li>
+                                <li>† <span class="highlight">AI pair-coded and fully terminal-native</span></li>
+                            </ul>
+
+                            <p class="footer-link">
+                                🔗 <a href="https://github.com/LoneWolf014/Terminal_Hangman_Python" target="_blank">View on GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="Project_Category" id="Personal_Ventures">
+
+            <hr class="hr-retro" data-content="Personal Explorations">
+
+            <section class="Project_Category" id="UE5">
+
+                <hr class="hr-3d" data-content="Unreal Engine Works">
+
+                <section class="Section_Container" id="HD_2D_Character">
+                    <div class="SectionHeading">
+                        <h1>HD_2D Character in 3D World (UE5)</h1>
+                    </div>
+                    <div class="Section_Card" 
+                        data-direction="right"
+                        data-img="url(assets/images/HDCH.png)"
+                        data-filter="grayscale(75%)"
+                        data-hue="hue-rotate(220deg)">
+                        <div class="Card_Overlay"> 
+                        </div>
+                        <div class="Card_Content">
+                            <div class="img-Content">
+                            </div>
+                            <div class="txt-Content">
+                                <p class="intro">
+                                    A 2D sprite dropped into a full 3D Unreal Engine world — looked cool, played rough. 
+                                    This prototype exposed every camera flaw I’d fix in the next one.
+                                </p>
+
+                                <p>
+                                    This was my first experiment mixing a <span class="highlight">2D character</span> 
+                                    with a fully 3D environment in Unreal Engine. The camera was locked to face the sprite directly 
+                                    — almost like watching a stage play — and the sprite itself came from <span class="highlight">Itch.io</span>, 
+                                    while the environment was kitbashed from the <span class="highlight">UE Marketplace</span>.
+                                </p>
+
+                                <p>
+                                    While the effect looked interesting at first, the limitations showed up quickly: 
+                                    the camera <span class="highlight">got stuck behind walls</span>, large props 
+                                    <span class="highlight">obscured the player</span>, and anything overhead could 
+                                    <span class="highlight">completely block the view</span>.
+                                </p>
+
+                                <p>
+                                    It wasn’t playable — not without serious camera logic. But this prototype became the 
+                                    foundation for my next project, where I’d start fixing every one of these problems.
+                                </p>
+
+                                <p class="footer-link">
+                                    🔗 <a href="https://youtu.be/yRUr5DnSOyQ" target="_blank">
+                                        View On Youtube
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="Section_Container" id="HD_2D_Cameras">
+                    <div class="SectionHeading">
+                        <h1>HD_2D_Cams — Camera Experiments in a 2D/3D World</h1>
+                    </div>
+                    <div class="Section_Card" 
+                        data-direction="left"
+                        data-img="url(assets/images/HD2DCams_OL.png)"
+                        data-filter="grayscale(75%)"
+                        data-hue="hue-rotate(220deg)">
+                        <div class="Card_Overlay">
+                            
+                        </div>
+                        <div class="Card_Content">
+                            <div class="img-Content"></div>
+                            <div class="txt-Content">
+                                <p class="intro">
+                                    Zoom in. Zoom out. Flip perspective. This prototype gave my HD_2D characters a camera system they could finally breathe in.
+                                </p>
+
+                                <p>
+                                    After the issues in my first HD_2D character test — walls blocking the player, camera getting stuck, zero rotation — I decided to rebuild the camera system from scratch. Not to give full modern control, but just enough flexibility to keep the player visible and the environment readable.
+                                </p>
+
+                                <p>
+                                    This prototype added <span class="highlight">zoom control</span> (via up/down arrows) and a <span class="highlight">3-angle toggle</span> (via the <code>C</code> key) to flip between three fixed but distinct views — straight-on, slightly angled, and almost top-down. These weren't true orbiting cameras, but simple swaps that made a big difference in visibility.
+                                </p>
+
+                                <p>
+                                    The biggest breakthrough was <span class="highlight">occlusion masking</span>. Using a depth-based material trick (from Unreal’s own training video: “Depth & Location Based Effects”), I made any obstructing 3D walls or props fade out when they blocked the sprite. It wasn’t perfect, but suddenly the character was no longer lost behind crates or stairs.
+                                </p>
+
+                                <p>
+                                    All logic was done in <span class="highlight">Blueprints</span> — no plugins, no C++. Just trial, error, and slowly wiring together a more playable HD_2D camera system.
+                                </p>
+
+                                <ul class="skills">
+                                    <li>† <span class="highlight">Blueprint-based camera system</span></li>
+                                    <li>† <span class="highlight">Zoom control tied to input</span></li>
+                                    <li>† <span class="highlight">Fixed-angle camera toggle (3 views)</span></li>
+                                    <li>† <span class="highlight">Wall occlusion masking using material logic</span></li>
+                                    <li>† <span class="highlight">Built in Unreal Engine 5 with no external tools</span></li>
+                                </ul>
+
+                                <p class="footer-link">
+                                    🔗 <a href="https://youtu.be/osOn0uI-ZQk" target="_blank">
+                                        View On Youtube
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="Section_Container" id="MLB_Glimpse">
+                    <div class="SectionHeading">
+                        <h1>My Last Breath — Cinematic Teaser (UE5)</h1>
+                    </div>
+                    <div class="Section_Card" 
+                        data-direction="right"
+                        data-img="url(assets/images/MLB.png)"
+                        data-filter="grayscale(75%)"
+                        data-hue="hue-rotate(0deg)">
+                        <div class="Card_Overlay"></div>
+                        <div class="Card_Content">
+                            <div class="img-Content"></div>
+                            <div class="txt-Content">
+                                <p class="intro">
+                                    A rough cinematic test that helped me realize how far my dream project still is — and how badly I want to reach it.
+                                </p>
+
+                                <p>
+                                    This short teaser was built inside <span class="highlight">Unreal Engine 5</span> as a visual spark for a much bigger story — 
+                                    my dream project, <span class="highlight">My Last Breath</span>. It was loosely inspired by narrative games like 
+                                    <em>The Walking Dead</em>, and focused on a grieving survivor trying to carry the weight left behind by a woman named Yuki.
+                                </p>
+
+                                <p>
+                                    Yuki saved the protagonist and a group of other survivors — a baby named Alita, and an older man named Frank — but she didn’t make it. 
+                                    The teaser shows the aftermath: memory, loss, and reluctant leadership in an apocalyptic world where survival is brutal.
+                                </p>
+
+                                <p>
+                                    I used <span class="highlight">kitbashed environments</span>, <span class="highlight">Metahumans</span>, 
+                                    AI-generated dialogue from ElevenLabs, <span class="highlight">Mixamo animations</span>, and rendered it all using 
+                                    <span class="highlight">UE5’s sequencer and cinematic camera system</span>. But honestly — the scenes were 
+                                    poorly optimized, badly timed, and struggled with heavy lag and compression artifacts.
+                                </p>
+
+                                <p>
+                                    Still, I learned more than I expected. I spent a whole day animating a subtle smile on Yuki’s face — my first time working 
+                                    with facial rigs. That moment taught me how hard animation really is — and how powerful even a small gesture can be when it works.
+                                </p>
+
+                                <p>
+                                    This video didn’t turn out great. But it gave me a reality check: no one shows how hard it is to make something from nothing. 
+                                    Behind every polished scene are weeks of chaos. I uploaded it anyway. 100 views, 8 likes (including mine). But I’m proud I tried.
+                                </p>
+
+                                <ul class="skills">
+                                    <li>† <span class="highlight">UE5 Cinematic Cameras + Sequencer</span></li>
+                                    <li>† <span class="highlight">Metahuman animation with Mixamo</span></li>
+                                    <li>† <span class="highlight">Voice acting with ElevenLabs AI</span></li>
+                                    <li>† <span class="highlight">Lighting, ambience, and rough editing</span></li>
+                                    <li>† <span class="highlight">Hard lessons in optimization</span></li>
+                                </ul>
+
+                                <p class="footer-link">
+                                    🔗
+                                    <a href="https://youtu.be/NFL0seo3jbk?si=k0iUgwbZzSl1FmKR" target="_blank" >
+                                        view on Youtube
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="Section_Container" id="Fire">
+                    <div class="SectionHeading">
+                        <h1>Fire Material — Stylized Torch Flame Inspired by Zelda</h1>
+                    </div>
+                    <div class="Section_Card" 
+                        data-direction="left"
+                        data-img="url(assets/images/Fire_OL.png)"
+                        data-filter="grayscale(75%)"
+                        data-hue="hue-rotate(0deg)">
+                        <div class="Card_Overlay"></div>
+                        <div class="Card_Content">
+                            <div class="img-Content">
+                            </div>
+                            <div class="txt-Content">
+                                <p class="intro">
+                                    When Niagara melted my laptop, I had to rethink how fire even works.
+                                </p>
+
+                                <p>
+                                    This wasn’t just a torch effect — it was a crash course in optimization, layering, and stylized art.
+                                    I was working on my action-adventure project <span class="highlight">Lost in Castle</span>, 
+                                    and my original fire system used Unreal’s <span class="highlight">Niagara particle system</span> with thousands of particles per torch.
+                                    It looked okay… until I had a dozen torches. Frame rate dropped. Lighting washed out. Everything turned into a wall of glowing white.
+                                </p>
+
+                                <p>
+                                    So I scrapped it and rebuilt the fire from scratch using a <span class="highlight">layered shader approach</span>.
+                                    Inspired by <em>Diablo III’s</em> effects breakdown in the link given below (if any one's interested),
+                                    I used texture blending and panning instead of brute force particles.
+                                </p>
+
+                                <p>
+                                    I hand-drew a stylized flame shape in <span class="highlight">Photoshop</span>,
+                                    then layered it with 2–3 scrolling noise textures to simulate motion and distortion.
+                                    No flipbooks. No baked simulations. Just <span class="highlight">alpha-masked planes with clever math</span>.
+                                </p>
+
+                                <p>
+                                    Once the base material was set, I applied it to a minimal Niagara setup —
+                                    around <span class="highlight">10–20 particles max per torch</span>.
+                                    The result? More readable fire, stylized glow, and a dramatic cut in GPU load.
+                                    It looked closer to <em>Zelda: Breath of the Wild</em> than I expected — not exact, but on the right path.
+                                </p>
+
+                                <p>
+                                    This wasn’t just an effect — it became a reminder that performance and style aren’t opposites.
+                                    And it deserves its own slot, separate from the rest of the project that made it necessary.
+                                </p>
+
+                                <ul class="skills">
+                                    <li>† <span class="highlight">Stylized fire shader using layered scrolling textures</span></li>
+                                    <li>† <span class="highlight">Photoshop-created alpha masks and noise maps</span></li>
+                                    <li>† <span class="highlight">Niagara system with 90% fewer particles</span></li>
+                                    <li>† <span class="highlight">Inspired by Diablo III and Zelda fire techniques</span></li>
+                                    <li>† <span class="highlight">Built for performance-constrained systems</span></li>
+                                </ul>
+
+                                <p class="footer-link">
+                                    🔗
+                                    <a href="https://www.youtube.com/watch?v=4Yz6srU6G1I" target="_blank">Julian Love’s GDC 2013 talk</a>
+                                </p>
+                                <p class="footer-link">
+                                    🔗 <a href="https://youtu.be/SpshquajXp8" target="_blank"> view on Youtube</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+            <section class="Project_Category" id="PyGame">
+
+                <hr class="hr-3d" data-content="PyGame Charms">
+
+                <section class="Section_Container" id="Runner">
+                    <div class="SectionHeading">
+                        <h1>Ben 10 Runner - An Endless Runner Game Made using Pygame</h1>
+                    </div>
+                    <div class="Section_Card" 
+                        data-direction="right"
+                        data-img="url(assets/images/BenRun.jpg)"
+                        data-filter="grayscale(75%)"
+                        data-hue="hue-rotate(40deg)">
+                        <div class="Card_Overlay"></div>
+                        <div class="Card_Content">
+                            <div class="img-Content"></div>
+                            <div class="txt-Content">
+                                <p class="intro">
+                                    A Ben 10–themed endless runner — my first ever finished game.
+                                </p>
+
+                                <p>
+                                    <span class="highlight">Ben 10 Runner</span> was my introduction to both Python and Pygame — a fully playable endless runner game, and the first time I ever felt like I’d “finished” something real. 
+                                    It started as a simple YouTube tutorial, but quickly spiraled into something of my own.
+                                </p>
+
+                                <p>
+                                    I added <span class="highlight">parallax backgrounds</span>, <span class="highlight">enemy animations</span>, and even experimented with a power-up system where Ben could transform into aliens — though I eventually removed it due to bugs and balance issues. 
+                                    (Some of the old code still lingers in the files as proof of that brief experiment.)
+                                </p>
+
+                                <p>
+                                    I didn’t release this game publicly — most of the assets came from random sources and I didn’t track licenses at the time. But it remains my most cherished project, because it’s what made me realize how fun and addictive game development can be.
+                                </p>
+
+                                <ul class="skills">
+                                    <li>† <span class="highlight">Fully playable endless runner</span></li>
+                                    <li>† <span class="highlight">Sprite animations + parallax backgrounds</span></li>
+                                    <li>† <span class="highlight">First solo game built entirely in Python</span></li>
+                                    <li>† <span class="highlight">Mix of multiple tutorial sources</span></li>
+                                </ul>
+
+                                <p class="footer-link">
+                                    🔗 <a href="https://github.com/LoneWolf014/Ben10-Runner" target="_blank">View on GitHub</a>
+                                </p>
+                                <p class="footer-link">
+                                    🔗 <a href="https://youtu.be/pI7aBKgjXJY?feature=shared" target="_blank"> View on Youtube</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="Section_Container" id="RayCaster">
+                    <div class="SectionHeading">
+                        <h1>RayCaster - A simple Raycasting engine with pygame</h1>
+                    </div>
+                    <div class="Section_Card" 
+                        data-direction="left"
+                        data-img="url(assets/images/RayCast.png)"
+                        data-filter="grayscale(75%)"
+                        data-hue="hue-rotate(220deg)">
+                        <div class="Card_Overlay"></div>
+                        <div class="Card_Content">
+                            <div class="img-Content">
+                                <video controls loop muted style="width: 100%; height: 100%;">
+                                    <source src="assets/videos/RayCaster.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="txt-Content">
+                                <p class="intro">
+                                    A weekend rabbit hole into how DOOM faked 3D in 1993.
+                                </p>
+
+                                <p>
+                                    This was a spontaneous project, born after watching a YouTube video about the original <em>DOOM</em>. I asked myself, 
+                                    “How did they make 3D games without real 3D engines?” The answer was <span class="highlight">raycasting</span> — a clever illusion built with trigonometry.
+                                </p>
+
+                                <p>
+                                    I followed tutorials from creators like <em>monkey see monkey do</em> and <em>FinFet</em>, breaking down the math behind early 90s engines. 
+                                    It blew my mind how simple formulas could trick the eye into seeing depth.
+                                </p>
+
+                                <p>
+                                    It’s not a real 3D engine — you can’t look up or down — but it felt like uncovering game dev archaeology. 
+                                    Bonus trivia: John Carmack and Romero didn’t use version control while building DOOM. Insane.
+                                </p>
+
+                                <ul class="skills">
+                                    <li>† <span class="highlight">Basic raycasting engine in Pygame</span></li>
+                                    <li>† <span class="highlight">2D → 3D illusion using trigonometry</span></li>
+                                    <li>† <span class="highlight">Inspired by DOOM / Wolfenstein techniques</span></li>
+                                    <li>† <span class="highlight">Built solo in a weekend for fun</span></li>
+                                </ul>
+
+                                <p class="footer-link">
+                                    🔗 <a href="https://github.com/LoneWolf014/3D-Projection" target="_blank">View on GitHub</a>
+                                </p>
+
+                                <p class="footer-link">
+                                    🔗 <a href="https://youtu.be/KqI5c6rqCqg" target="_blank">
+                                        View On Youtube
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="Section_Container" id="crossHair">
+                    <div class="SectionHeading">
+                        <h1>crossHair - A minigame made in pygame</h1>
+                    </div>
+                    <div class="Section_Card" 
+                        data-direction="right"
+                        data-img="url(assets/images/Crosshair.png)"
+                        data-filter="grayscale(75%)"
+                        data-hue="hue-rotate(220deg)">
+                        <div class="Card_Overlay"></div>
+                        <div class="Card_Content">
+                            <div class="img-Content"></div>
+                            <div class="txt-Content">
+                                <p class="intro">
+                                    It’s not really a game — just something fun to click around with.
+                                </p>
+
+                                <p>
+                                    <span class="highlight">crossHair</span> is a simple mouse-based minigame I made while learning Pygame. 
+                                    There’s no real goal — just click targets with a crosshair, watch them disappear, and enjoy the simplicity.
+                                </p>
+
+                                <p>
+                                    It’s tiny, rough, and not worth its own repo — but I’m still fond of it. 
+                                    It reminds me of the small wins that kept me going during the learning curve.
+                                </p>
+
+                                <ul class="skills">
+                                    <li>† <span class="highlight">Target-clicking minigame</span></li>
+                                    <li>† <span class="highlight">Custom mouse crosshair</span></li>
+                                    <li>† <span class="highlight">Made during early Pygame learning phase</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+        </section>
+
+        <section class="Section_Container" id="Contact">
+            <hr class="hr-retro" data-content="Wanna Get in Touch">
+            <div class="SectionHeading">
+                <h1>Contact</h1>
+            </div>
+            <div class="text_img_container">
+                <div class="img_content">
+                    <video loop muted autoplay style="width: 100%; height: 100%;">
+                        <source src="assets/videos/Ghostie.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text_content">
+
+                </div>
+            </div>
+        </section>
+
+        <button data-mode="Menu">Main-Menu</button>
+    </section>
+    
+
+<!-- .......................................................................................... -->
+    <script src="Script.js"></script>
+</body>
+</html>

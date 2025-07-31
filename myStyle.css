@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow: hidden;
+
+    position: relative;
+}
+
+:root{
+    /* MAIN MENU COLOR PALETTE */
+    --bg-dark:      #0a1628;
+    --bg-mid:       #001122;
+    --bg-light:     #002147;
+
+    --green-soft:   #00cc66;
+    --green-base:   #00ff88;
+    --green-glow:   #00ff00;
+
+    /* Text Inside Buttons */
+    --green-glow-inner: #00ff0050;
+    --green-glow-mid:   #00ff0070;
+    --green-glow-outer: #00ff0090;
+
+    /* Button Hover Background */
+    --btn-hvr-bg-green: rgba(0, 255, 0, 0.1);
+    --btn-hvr-inset-green: rgba(0, 255, 0, 0.5)
+
+    --green-glass:  rgba(0, 255, 0, 0.05);
+    --green-swipe:  rgba(0, 255, 0, 0.15);
+
+    --text-primary: var(--green-base);
+    --text-glow:    var(--green-glow);
+
+    --grid-line:  rgba(0, 255, 136, 0.06);
+    --grid-shadow: rgba(0, 255, 136, 0.1);
+
+    /* Title And Border Font-Sizes */
+    --title-size:   clamp(2.2rem, 6vw, 4rem);
+    --ascii-size:   clamp(1.6rem, 5vw, 3.2rem);
+    --subtitle-size: clamp(1.2rem, 3vw, 2rem);
+    --ascii-padding: 0.3em 0;
+}
+
+.Hidden{
+    display: none;
+    visibility: hidden;
+}
+
+.screen{
+    position: absolute;
+    inset: 0;
+    height: 100vh;
+}
+
+#Menu{
+    padding: 2rem 1rem;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: safe center;
+    align-items: center;
+
+    background-image:
+        linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-mid) 50%, var(--bg-light) 100%);
+    
+    color: var(--text-primary);
+
+    /* subtle animated background */
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+
+    /* for grid overlay */
+    position: relative;
+
+    min-height: 100vh;
+}
+
+#Menu::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(var(--grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    /* z-index: -1; */
+}
+
+/* for Animated Background #Menu */
+@keyframes gradient-shift {
+    0%, 100% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+}
+/* ............................................................................................. */
+
+#Menu > h1{
+    
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    font-size: var(--title-size);
+    letter-spacing: 3px;
+    
+    margin: 0.5em;
+    padding: 0.2em;
+    text-align: center;
+    
+    color: var(--text-primary);
+}
+
+#Main-Title::before,
+#Main-Title::after{
+    font-family: "Share Tech Mono", monospace;
+    content: " | ";
+    font-size: calc(var(--title-size) * 0.95);
+
+    margin: 0 0.3rem;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+#Menu > .ascii-line{
+    text-align: center;
+    padding: var(--ascii-padding);
+}
+
+.ascii-line::before{
+    content: "================================================";
+    font-family: "Share Tech Mono", monospace;
+    display: block;
+
+    font-size: var(--ascii-size);
+    letter-spacing: 2px;
+
+    opacity: 1;
+    color: var(--text-primary);
+}
+
+/* ............................................................................................. */
+
+#Menu > h3 {
+    
+    margin-top: 4rem;
+    padding: 0em 0.5em;
+
+    font-size: var(--subtitle-size);
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    text-align: center;
+}
+
+.btn-container{
+
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-container > button {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+
+    background: var(--green-glass);
+    backdrop-filter: blur(3px);
+
+    border: 3px solid var(--green-soft);
+    border-radius: 6px;
+    color: var(--green-soft);
+
+    clip-path: polygon(20px 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+    transition: transform 0.2s ease;
+
+    position: relative;
+    overflow: hidden;
+
+    font-family: "Share Tech Mono", monospace;
+}
+
+.btn-container > button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--green-swipe),
+        transparent
+    );
+    transition: left 0.5s ease;
+    pointer-events: none;
+}
+
+.btn-container > button > span::before{
+    content: "> ";
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.btn-container > button > span::after{
+    content: " <";
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.btn-container > button:hover > span::before,
+.btn-container > button:hover > span::after{
+    opacity: 1;
+}
+
+.btn-container > button:hover > span{
+    text-shadow:
+        0 0 5px var(--green-glow-inner),
+        0 0 10px var(--green-glow-mid),
+        0 0 20px var(--green-glow-outer);
+}
+
+.btn-container > button:hover::before{
+    left: 100%;
+}
+.btn-container > button:hover{
+
+    background: var(--btn-hvr-bg-green);
+
+    box-shadow: 
+        0 0 10px #00ff00,
+        0 0 30px #00ff00,
+        inset 0 0 15px var(--btn-hvr-inset-green);
+
+    cursor: pointer;
+
+    transform: translateY(-5px);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+
+    /* ASCII, Title And Subtitle */
+    #Main-Title{
+        font-size: 1.6rem;
+    }
+
+    #Menu > h3 {
+        font-size: 1rem;
+    }
+    .ascii-line::before{
+        content: "==================================";
+        font-size: 2.2rem;
+    }
+
+    /* Buttons */
+    .btn-container {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 3rem 0;
+    }
+
+    .btn-container > button {
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .btn-container > button > span::before,
+    .btn-container > button > span::after{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1400px){
+    .ascii-line::before {
+    content: "=======================================";
+    font-size: 2.6rem;
+    }
+
+    #Main-Title {
+    font-size: 2.6rem;
+    }
+
+    #Main-Title::before,
+    #Main-Title::after {
+    font-size: 2.6rem;
+    }
+
+    h3 {
+    font-size: 1.6rem;
+    }
+}
